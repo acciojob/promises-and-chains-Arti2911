@@ -3,8 +3,8 @@ let form=document.getElementById("form")
 form.addEventListener("submit",submitHandler)
 function submitHandler(event){
 	event.preventDefault()
-    let nameInput=document.getElementById("name").value;
-    let ageInput=document.getElementById("age").value;
+    let nameInput=document.getElementById("name").value.trim();
+    let ageInput=document.getElementById("age").value.trim();
     // console.log(event)
     if(!nameInput || !ageInput){
         alert("Please fill in all fields")
